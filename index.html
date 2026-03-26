@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundpad V3.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <div class="sidebar-label">SFX</div>
+        <div class="nav-pip" data-target="background" data-label="BG" style="--pip-color: rgb(115, 154, 228);"></div>
+        <div class="nav-pip" data-target="logging" data-label="LOG" style="--pip-color: rgb(200, 110, 30);"></div>
+        <div class="nav-pip" data-target="hunting" data-label="HNT" style="--pip-color: rgb(120, 170, 30);"></div>
+        <div class="sidebar-version">V3.0</div>
+    </nav>
+
+    <!-- Top Controls Bar -->
+    <header id="topbar">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">SOUNDPAD</span>
+            <span class="logo-version">V3.0</span>
+        </div>
+        <div class="controls">
+            <label class="control-group">
+                <span class="control-label">SIZE</span>
+                <input type="range" id="width-slider" min="60" max="130" value="90">
+                <span class="control-value" id="size-display">90</span>
+            </label>
+            <label class="control-group">
+                <span class="control-label">VOL</span>
+                <input type="range" id="volume-slider" min="0" max="100" value="80">
+                <span class="control-value" id="vol-display">80</span>
+            </label>
+            <button id="stop-all-btn" title="Stop All Sounds">■ STOP ALL</button>
+        </div>
+    </header>
+
+    <!-- Now Playing Bar --> 
+    <div id="now-playing">
+        <span class="np-icon">▶</span>
+        <span id="np-text">— IDLE —</span>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content">
+
+        <!-- Background SFX Section -->
+        <section class="sound-section" id="background">
+            <div class="section-header" style="--section-color: rgb(115, 154, 228);">
+                <span class="section-tag">01</span>
+                <h2>BACKGROUND SFX</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="button-grid">
+                <div class="sound-button" data-sound="assets/Magical_Transition1.mp3" data-label="Magical Transition 1">
+                    <span class="btn-icon">✦</span>
+                    <span class="btn-text">Magical Transition 1</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Magical_Transition2.mp3" data-label="Magical Transition 2">
+                    <span class="btn-icon">✦</span>
+                    <span class="btn-text">Magical Transition 2</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Bird_Chirps.mp3" data-label="Bird Chirps">
+                    <span class="btn-icon">♪</span>
+                    <span class="btn-text">Bird Chirps</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Tree_Fall.mp3" data-label="Tree Falling">
+                    <span class="btn-icon">↓</span>
+                    <span class="btn-text">Tree Falling</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Wind_Breeze.mp3" data-label="Wind Breeze 1">
+                    <span class="btn-icon">≋</span>
+                    <span class="btn-text">Wind Breeze 1</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Wind_Breeze2.mp3" data-label="Wind Breeze 2">
+                    <span class="btn-icon">≋</span>
+                    <span class="btn-text">Wind Breeze 2</span>
+                    <span class="btn-status"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logging Section -->
+        <section class="sound-section" id="logging">
+            <div class="section-header" style="--section-color: rgb(200, 110, 30);">
+                <span class="section-tag">02</span>
+                <h2>LOGGING</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="button-grid">
+                <div class="sound-button" data-sound="assets/Axe1.mp3" data-label="Axe Strike 1">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 1</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe2.mp3" data-label="Axe Strike 2">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 2</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe3.mp3" data-label="Axe Strike 3">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 3</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe4.mp3" data-label="Axe Strike 4">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 4</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe5.mp3" data-label="Axe Strike 5">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 5</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe6.mp3" data-label="Axe Strike 6">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 6</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe7.mp3" data-label="Axe Strike 7">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 7</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Axe8.mp3" data-label="Axe Strike 8">
+                    <span class="btn-icon">⚒</span>
+                    <span class="btn-text">Axe 8</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Chainsaw_Start.mp3" data-label="Chainsaw Start">
+                    <span class="btn-icon">⚙</span>
+                    <span class="btn-text">Chainsaw Start</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Chainsaw.mp3" data-label="Chainsaw Running">
+                    <span class="btn-icon">⚙</span>
+                    <span class="btn-text">Chainsaw</span>
+                    <span class="btn-status"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hunting Section -->
+        <section class="sound-section" id="hunting">
+            <div class="section-header" style="--section-color: rgb(120, 170, 30);">
+                <span class="section-tag">03</span>
+                <h2>HUNTING</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="button-grid">
+                <div class="sound-button" data-sound="assets/Reload.mp3" data-label="Reload">
+                    <span class="btn-icon">↺</span>
+                    <span class="btn-text">Reload</span>
+                    <span class="btn-status"></span>
+                </div>
+                <div class="sound-button" data-sound="assets/Shot.mp3" data-label="Gun Shot">
+                    <span class="btn-icon">◎</span>
+                    <span class="btn-text">Gun Shot</span>
+                    <span class="btn-status"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
