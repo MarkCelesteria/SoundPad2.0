@@ -9,3 +9,7 @@ A lightweight soundpad web app for quickly playing and managing audio clips.
 - Add your sound files in the `assets/` folder.
 - Configure buttons in `index.html` and `js/script.js`.
 - Use this in classroom/roleplay setups to switch background audio and sound effects fast.
+
+## Live Demo
+- GitHub Pages: https://markcelesteria.github.io/SoundPad2.0/  
+  (Replace with your actual GitHub Pages URL if different.)
